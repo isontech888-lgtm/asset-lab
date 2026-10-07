@@ -132,7 +132,7 @@ export default function Page() {
     <div className="min-h-screen p-6 max-w-6xl mx-auto">
       <div className="flex justify-between items-start mb-6">
         <div>
-          <h1 className="text-3xl font-bold">資產成長實驗室 v5 - DCA 完整版</h1>
+          <h1 className="text-3xl font-bold">資產成長實驗室 v6 - 投組多檔 DCA</h1>
           <p className="text-zinc-400 text-sm mt-1">可自由增減 / 編輯 / 刪除 - 支援主動式ETF + GBM蒙地卡羅 + DCA - Token 藏在後端</p>
           <p className="text-xs text-zinc-500 mt-1">{log}</p>
         </div>
