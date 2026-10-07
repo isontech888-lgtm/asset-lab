@@ -208,14 +208,13 @@ export default function Page() {
         </div>
       </div>
 
-      {selectedForForecast && (
-        <MonteCarloPanel currentPrice={selectedForForecast.currentPrice} />
-      )}
-      {!selectedForForecast && active.assets.length>0 && (
-        <div className="mt-6">
-          <MonteCarloPanel currentPrice={active.assets[0]?.currentPrice || 15} />
-        </div>
-      )}
+      <div className="mt-6">
+        <MonteCarloPanel 
+          currentPrice={selectedForForecast?.currentPrice || active.assets[0]?.currentPrice || 15} 
+          initialShares={selectedForForecast?.shares || active.assets[0]?.shares || 1000}
+          symbolHint={selectedForForecast?.symbol || active.assets[0]?.symbol || "00981A"}
+        />
+      </div>
     </div>
   );
 }
