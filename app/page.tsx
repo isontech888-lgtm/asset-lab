@@ -1,7 +1,7 @@
 
 "use client";
 import { useEffect, useState } from "react";
-import MonteCarloPanel from "../../components/MonteCarloPanel";
+import MonteCarloPanel from "../components/MonteCarloPanel";
 
 type Asset = {
   id: string;
